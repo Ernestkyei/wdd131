@@ -1,0 +1,248 @@
+/* Basic styles */
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+/* Title bar */
+.title-bar {
+    background-color: #007bff; /* Blue background for title bar */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navbar directly below the title bar */
+.navbar {
+    background-color: #000; /* Black background for navbar */
+    height: 80px; /* Increased height for wider navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap if screen is too small */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap in the navbar */
+    justify-content: center; /* Center items if they wrap */
+}
+
+.navbar ul li {
+    margin-right: 30px; /* Space between menu items */
+    margin-bottom: 10px; /* Space between items when wrapping */
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px; /* Adjusted padding for better spacing */
+}
+
+.navbar ul li a:hover {
+    color: #ddd;
+}
+
+
+/* Set the background color of the <h2> elements inside the card to blue */
+.card h2 {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text for contrast */
+    padding: 10px; /* Add some padding for better readability */
+    margin-top: 0; /* Remove margin to make the background touch the edges of the card */
+    border-radius: 0; /* Optional: remove rounded corners for sharp edges */
+}
+
+
+h2{
+    text-align: center;
+}
+
+
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-basis: 100%; /* Default to full width on small screens */
+    box-sizing: border-box;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile View (up to 600px) */
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column; /* Stack navbar items vertically */
+        text-align: center; /* Center-align items */
+    }
+
+    .navbar ul li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Space between items on small screens */
+    }
+
+    main {
+        flex-direction: column; /* Stack sections vertically */
+        padding: 10px;
+    }
+
+    .card {
+        flex-basis: 100%; /* Cards take full width */
+        margin-bottom: 15px; /* Reduce space between cards */
+    }
+}
+
+/* Tablet View (601px to 1024px) */
+@media (max-width: 1024px) {
+    .navbar ul {
+        flex-direction: row; /* Keep navbar items in a row */
+        justify-content: center; /* Center navbar items */
+    }
+
+    .navbar ul li {
+        margin-right: 20px; /* Space between items */
+    }
+
+    main {
+        flex-direction: column; /* Stack sections vertically */
+        padding: 10px;
+    }
+
+    .card {
+        flex-basis: 48%; /* Two cards per row */
+        margin-bottom: 20px;
+    }
+}
+
+/* Desktop View (1025px and above) */
+@media (min-width: 1025px) {
+    .navbar ul {
+        flex-direction: row; /* Keep navbar items in a row */
+        justify-content: center; /* Center navbar items */
+    }
+
+    .navbar ul li {
+        margin-right: 30px; /* Space between items */
+    }
+
+    main {
+        flex-direction: row; /* Display sections side by side */
+        padding: 20px;
+    }
+
+    .card {
+        flex-basis: 48%; /* Two cards per row */
+    }
+}
+
+
+/* Layout for the both-text-picture container */
+.both-text-picture {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns: one for text and one for image */
+    grid-gap: 20px; /* Space between columns */
+    align-items: center; /* Vertically align items in the center */
+    padding: 20px;
+}
+
+/* Styling for the text content */
+.text-content {
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background for text */
+    border-radius: 8px;
+}
+
+/* Ensure the image is responsive */
+.about-content img {
+    max-width: 100%; /* Ensure image doesn't overflow its container */
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Media query for smaller screens (Mobile View) */
+@media (max-width: 768px) {
+    /* Stack the content vertically on small screens */
+    .both-text-picture {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+}
+
+
+.history-ghana {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Image on the left, text on the right */
+    grid-gap: 20px; /* Space between the image and text */
+    align-items: center; /* Vertically align the content */
+    padding: 20px;
+}
+
+.history-ghana .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: add rounded corners to the image */
+}
+
+.history-ghana p {
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+h1{
+    text-align: center;
+}
+
+.text-content p{
+    font-size: 12px;
+}
+
+.card p{
+    font-size: 12px ;
+}
+
+ul li a{
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer p{
+    font-size: 12px;
+}
+
+#currentyear{
+    font-size: 12px;
+}
