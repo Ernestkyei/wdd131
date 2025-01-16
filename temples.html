@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Picture Album - Ernest Nkansah Kyei">
+    <meta name="author" content="Ernest Nkansah Kyei">
+    <title>Temple Album - Ernest Nkansah Kyei</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Link to CSS files -->
+    <link rel="stylesheet" href="temples.css">
+    <link rel="stylesheet" href="temples-large.css">
+
+    <!-- Defer JavaScript -->
+    <script src="temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Picture Album</h1>
+        <nav>
+            <!-- Hamburger button for mobile view -->
+            <button id="hamburger" class="hamburger">☰</button>
+            <ul id="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#old">Old</a></li>
+                <li><a href="#new">New</a></li>
+                <li><a href="#large">Large</a></li>
+                <li><a href="#small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="main-heading">Home</h2>
+        <section class="temple-gallery">
+            <figure>
+                <img src="images/IMG_7258-rotated.webp" alt="Temple 1">
+                <figcaption>Utah</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt_lake_temple.webp" alt="Temple 2">
+                <figcaption>salt lake</figcaption>
+            </figure>
+            <figure>
+                <img src="images/caption.jpg" alt="Temple 3">
+                <figcaption>Rome</figcaption>
+            </figure>
+            <figure>
+                <img src="images/accra-ghana-temple-13760-main.jpg" alt="Temple 4">
+                <figcaption>Accra Ghana</figcaption>
+            </figure>
+            <figure>
+                <img src="images/oakland-california-temple-2654-main.jpg" alt="Temple 5">
+                <figcaption>california </figcaption>
+            </figure>
+            <figure>
+                <img src="images/FJMP64QOCDVT4TZSINUA34VXWQ.avif" alt="Temple 6">
+                <figcaption>Nairobi Kenya </figcaption>
+            </figure>
+            <figure>
+                <img src="images/sierra Leone temple" alt="Temple 7">
+                <figcaption>Sierra Leone</figcaption>
+            </figure>
+            <figure>
+                <img src="images/polynesia" alt="Temple 8">
+                <figcaption>Polynesia</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Argentina" alt="Temple 9">
+                <figcaption>Argentina</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © <span id="currentyear"></span> 🌸Ernest Nkansah Kyei🌸 Ghana</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="temples.js" defer></script>
+</body>
+</html>
