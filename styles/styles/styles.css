@@ -1,0 +1,190 @@
+:root {
+    --primary-color: blue;
+    --secondary-color: #003366; /* Remove this or change as needed */
+    --font-stack: Arial, sans-serif;
+    --card-bg: #ffffff;
+    --card-shadow: blue;
+}
+
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    background-image: url('https://images.pexels.com/photos/16508234/pexels-photo-16508234/free-photo-of-tangalle-beach-sri-lanka-drone-view.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow to header */
+    height: 70px;
+    width: 100%;
+}
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00; /* Gold color on hover for a Ghanaian theme */
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+}
+
+.hero {
+    background-color: transparent; /* Removed the secondary color */
+    color: white;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .place-info {
+    background-color: var(--card-bg);
+    color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--card-shadow);
+    max-width: 300px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: left;
+    font-size: 12px;
+    list-style-type: none;
+    color: blue;
+}
+
+.hero .place-info h1 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.hero .place-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero .place-info li {
+    margin: 0.5rem 0;
+    padding: 0.25rem 0;
+    font-size: 12px;
+    color: var(--secondary-color);
+}
+
+.hero .place-info li strong {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+.weather {
+    background-color: var(--card-bg);
+    color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--card-shadow);
+    max-width: 400px;
+    position: absolute;
+    bottom: 7%;
+    right: 10%;
+    text-align: center;
+}
+
+.weather img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.weather h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.weather p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.weather span {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    .hero {
+        padding: 1rem;
+    }
+
+    .hero .place-info {
+        position: relative;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        max-width: 90%;
+    }
+
+    .weather {
+        position: relative;
+        margin: 2rem auto;
+        max-width: 90%;
+        bottom: auto;
+        right: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
