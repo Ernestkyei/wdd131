@@ -64,6 +64,10 @@ document.addEventListener("DOMContentLoaded", () => {
         // Rotate the hamburger and toggle its icon between '☰' and '×'
         hamburger.classList.toggle("open"); // This will rotate the hamburger and change to "X"
     });
-});
 
-document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+    // Update the current year in the footer
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+    // Update the last modified date in the footer
+    document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+});
