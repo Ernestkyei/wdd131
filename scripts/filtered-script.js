@@ -65,3 +65,5 @@ document.addEventListener("DOMContentLoaded", () => {
         hamburger.classList.toggle("open"); // This will rotate the hamburger and change to "X"
     });
 });
+
+document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
