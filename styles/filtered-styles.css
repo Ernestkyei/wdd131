@@ -21,7 +21,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #007bff;
+    background-color: #5711da;
     padding: 10px 20px;
     z-index: 1000;
 }
@@ -57,7 +57,7 @@ nav {
 }
 
 .nav-links a:hover {
-    background-color: #0056b3;
+    background-color: #5711da;
 }
 /* Hamburger Icon */
 .hamburger {
@@ -182,4 +182,23 @@ nav {
     body {
         margin-top: 100px; /* Ensure content is pushed down below navbar */
     }
+}
+
+footer {
+    background-color:  #5711da;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer span {
+    font-weight: bold;
 }
